@@ -31,18 +31,18 @@
     {% if paper.summary %}
       <p class="paper-summary">{{ paper.summary | escape }}</p>
     {% endif %}
-    {% if paper.url or paper.code %}
+    {% if paper.url or paper.resources %}
       <div class="paper-links">
         {% if paper.url %}
           <a href="{{ paper.url }}" target="_blank" rel="noopener" aria-label="Read paper: {{ paper.title | escape }}">
-            Read paper <span aria-hidden="true">↗</span>
+            Paper <span aria-hidden="true">↗</span>
           </a>
         {% endif %}
-        {% if paper.code %}
-          <a href="{{ paper.code }}" target="_blank" rel="noopener" aria-label="View code: {{ paper.title | escape }}">
-            View code <span aria-hidden="true">↗</span>
+        {% for resource in paper.resources %}
+          <a href="{{ resource.url }}" target="_blank" rel="noopener" aria-label="{{ resource.label | escape }}: {{ paper.title | escape }}">
+            {{ resource.label | escape }} <span aria-hidden="true">↗</span>
           </a>
-        {% endif %}
+        {% endfor %}
       </div>
     {% endif %}
   </div>

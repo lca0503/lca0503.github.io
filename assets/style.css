@@ -171,7 +171,7 @@ strong {
 }
 
 .wordmark-symbol {
-  width: 30px;
+  width: 34px;
   height: 30px;
   flex-shrink: 0;
   background-color: var(--accent);
@@ -262,6 +262,15 @@ nav > a[aria-current]::after {
 .footer-name {
   color: var(--text);
   font-size: var(--text-secondary);
+}
+
+.footer-credit {
+  margin: 4px 0 0;
+  font-size: var(--text-small);
+}
+
+.footer-credit a {
+  color: inherit;
 }
 
 .footer-links {
@@ -473,7 +482,8 @@ nav > a[aria-current]::after {
 
 .paper-links {
   display: flex;
-  gap: 17px;
+  flex-wrap: wrap;
+  gap: 4px 17px;
   padding-top: 4px;
   font-size: var(--text-meta);
 }

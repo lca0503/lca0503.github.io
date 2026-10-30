@@ -8,7 +8,16 @@
     "type": "publication",
     "selected": true,
     "url": "https://arxiv.org/abs/2608.16203",
-    "code": "https://github.com/lca0503/INSPIRE",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/lca0503/INSPIRE"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://huggingface.co/datasets/lca0503/INSPIRE"
+      }
+    ],
     "summary": "A benchmark for speech retrieval guided by natural-language instructions, evaluating how systems handle semantic content, speaker identity, speaking style, environmental sounds, and combinations of these attributes."
   },
   {
@@ -40,7 +49,13 @@
     "year": 2026,
     "type": "publication",
     "selected": false,
-    "url": "https://arxiv.org/abs/2512.16883"
+    "url": "https://arxiv.org/abs/2512.16883",
+    "resources": [
+      {
+        "label": "Models",
+        "url": "https://huggingface.co/collections/hank0316/adasearch"
+      }
+    ]
   },
   {
     "id": "breezyvoice",
@@ -50,7 +65,17 @@
     "year": 2026,
     "type": "publication",
     "selected": false,
-    "url": "https://arxiv.org/abs/2501.17790"
+    "url": "https://arxiv.org/abs/2501.17790",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/mtkresearch/BreezyVoice"
+      },
+      {
+        "label": "Model",
+        "url": "https://huggingface.co/MediaTek-Research/BreezyVoice"
+      }
+    ]
   },
   {
     "id": "when-silence-matters",
@@ -61,6 +86,24 @@
     "type": "publication",
     "selected": true,
     "url": "https://arxiv.org/abs/2510.00626",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/lca0503/AudioInterference"
+      },
+      {
+        "label": "GSM8K data",
+        "url": "https://huggingface.co/datasets/lca0503/audio_interference_gsm8k"
+      },
+      {
+        "label": "MMLU data",
+        "url": "https://huggingface.co/datasets/lca0503/audio_interference_mmlu"
+      },
+      {
+        "label": "ARC-Challenge data",
+        "url": "https://huggingface.co/datasets/lca0503/audio_interference_arc_challenge"
+      }
+    ],
     "summary": "A study of cross-modal interference showing that irrelevant audio, including silence and noise, can undermine text reasoning in large audio-language models and destabilize their predictions."
   },
   {
@@ -72,7 +115,16 @@
     "type": "publication",
     "selected": true,
     "url": "https://aclanthology.org/2025.acl-short.72/",
-    "code": "https://github.com/lca0503/MergeToVLRM",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/lca0503/MergeToVLRM"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://huggingface.co/datasets/lca0503/rlaif_v_train_400"
+      }
+    ],
     "summary": "A training-free approach that merges text-based reward models with large vision-language models to transfer textual preferences and improve the evaluation of multimodal outputs."
   },
   {
@@ -83,7 +135,17 @@
     "year": 2025,
     "type": "publication",
     "selected": false,
-    "url": "https://arxiv.org/abs/2411.05361"
+    "url": "https://arxiv.org/abs/2411.05361",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/dynamic-superb/dynamic-superb"
+      },
+      {
+        "label": "Datasets",
+        "url": "https://huggingface.co/DynamicSuperb"
+      }
+    ]
   },
   {
     "id": "dogerm",
@@ -94,7 +156,16 @@
     "type": "publication",
     "selected": true,
     "url": "https://aclanthology.org/2024.emnlp-main.868/",
-    "code": "https://github.com/MiuLab/DogeRM",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/MiuLab/DogeRM"
+      },
+      {
+        "label": "Models",
+        "url": "https://huggingface.co/collections/miulab/dogerm"
+      }
+    ],
     "summary": "A framework that merges domain-specific language models with general reward models, integrating specialized knowledge to improve reward modeling without collecting additional domain-specific preference data."
   },
   {
@@ -105,7 +176,17 @@
     "year": 2024,
     "type": "publication",
     "selected": false,
-    "url": "https://aclanthology.org/2024.findings-eacl.49/"
+    "url": "https://aclanthology.org/2024.findings-eacl.49/",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/MiuLab/UMR"
+      },
+      {
+        "label": "Models & data",
+        "url": "https://drive.google.com/drive/folders/1imebGaCvLky9mujcTggn0wmQIVXHwPNs"
+      }
+    ]
   },
   {
     "id": "visually-enhanced-phrase-understanding",
@@ -116,7 +197,16 @@
     "type": "publication",
     "selected": true,
     "url": "https://aclanthology.org/2023.findings-acl.363/",
-    "code": "https://github.com/MiuLab/VisualLU",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/MiuLab/VisualLU"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://drive.google.com/drive/folders/14pvnY02bVgr_X_rCRbxv1oU_eW9AY7jx"
+      }
+    ],
     "summary": "A method that enriches phrase representations with generated visual cues, combining text and image encoders to improve language understanding and entity clustering across benchmark datasets."
   },
   {
@@ -127,7 +217,17 @@
     "year": 2023,
     "type": "publication",
     "selected": false,
-    "url": "https://aclanthology.org/2023.sigdial-1.34/"
+    "url": "https://aclanthology.org/2023.sigdial-1.34/",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/MiuLab/CONVERSER"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://drive.google.com/drive/folders/1z375Z5-3vNnB6Pi37I0u-P1BDDW_9kDB"
+      }
+    ]
   },
   {
     "id": "instruction-guided-voice-conversion",
@@ -148,7 +248,13 @@
     "type": "publication",
     "selected": false,
     "award": "Best Paper Award",
-    "url": "https://arxiv.org/abs/2210.07185"
+    "url": "https://arxiv.org/abs/2210.07185",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/JSALT-2022-SSL/superb-prosody"
+      }
+    ]
   },
   {
     "id": "self-supervised-audio-representations",
@@ -158,7 +264,13 @@
     "year": 2022,
     "type": "publication",
     "selected": false,
-    "url": "https://proceedings.mlr.press/v166/wu22a.html"
+    "url": "https://proceedings.mlr.press/v166/wu22a.html",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/tony10101105/HEAR-2021-NeurIPS-Challenge---NTU-GURA"
+      }
+    ]
   },
   {
     "id": "gpt4o-voice-mode",
@@ -178,7 +290,13 @@
     "year": 2024,
     "type": "preprint",
     "selected": false,
-    "url": "https://arxiv.org/abs/2411.07111"
+    "url": "https://arxiv.org/abs/2411.07111",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/nervjack2/SpeechChatGPTStreaming/tree/end2end"
+      }
+    ]
   },
   {
     "id": "continual-pretraining-forgetting",
@@ -188,7 +306,13 @@
     "year": 2024,
     "type": "preprint",
     "selected": false,
-    "url": "https://arxiv.org/abs/2401.03129"
+    "url": "https://arxiv.org/abs/2401.03129",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/lca0503/Llama_tw"
+      }
+    ]
   },
   {
     "id": "unsupervised-speech-translation",

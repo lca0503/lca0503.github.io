@@ -16,8 +16,8 @@
 
       try {
         localStorage.setItem('theme', root.dataset.theme);
-      } catch (_) {
-        // Theme switching still works when browser storage is unavailable.
+      } catch {
+        // Browser storage may be disabled.
       }
 
       updateLabel();

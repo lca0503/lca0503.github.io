@@ -15,9 +15,12 @@
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
     <script>
       try {
-        const saved = localStorage.getItem('theme');
-        document.documentElement.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      } catch (_) {}
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        // Browser storage may be disabled.
+      }
     </script>
     <script src="{{ '/assets/site.js' | relative_url }}" defer></script>
   </head>

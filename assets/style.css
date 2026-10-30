@@ -18,7 +18,7 @@
   color-scheme: light;
 }
 
-:root[data-theme=dark] {
+:root[data-theme='dark'] {
   --bg: #18201e;
   --surface: #202b27;
   --text: #e4ebe7;
@@ -91,12 +91,12 @@ h3 {
 
 h1 {
   font-size: var(--heading-page);
-  letter-spacing: -.035em;
+  letter-spacing: -0.035em;
 }
 
 h2 {
   font-size: var(--heading-section);
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
 }
 
 h3 {
@@ -136,7 +136,7 @@ strong {
   top: 12px;
 }
 
-/* Shared navigation and page frame. */
+/* Layout */
 
 .site-header {
   border-bottom: 1px solid var(--line);
@@ -172,7 +172,7 @@ strong {
 
 .wordmark-symbol {
   font-size: var(--text-meta);
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
   color: var(--accent);
   width: 30px;
   height: 30px;
@@ -234,11 +234,11 @@ nav > a[aria-current]::after {
   display: none;
 }
 
-[data-theme=dark] .sun {
+[data-theme='dark'] .sun {
   display: block;
 }
 
-[data-theme=dark] .moon {
+[data-theme='dark'] .moon {
   display: none;
 }
 
@@ -278,7 +278,7 @@ nav > a[aria-current]::after {
   color: var(--muted);
 }
 
-/* Home: biography and photograph. */
+/* Home */
 
 .intro {
   display: grid;
@@ -405,7 +405,7 @@ nav > a[aria-current]::after {
   margin: 0;
 }
 
-/* Publications use one shared template on both pages. */
+/* Publications */
 
 .publication-list {
   border-top: 1px solid var(--line);
@@ -527,7 +527,7 @@ nav > a[aria-current]::after {
   white-space: nowrap;
 }
 
-.filter-buttons button[aria-pressed=true] {
+.filter-buttons button[aria-pressed='true'] {
   background: var(--accent-soft);
   color: var(--accent);
   border-color: var(--line);
@@ -581,18 +581,10 @@ nav > a[aria-current]::after {
   color: var(--muted);
 }
 
-.result-count,
-.publication-note {
+.result-count {
   color: var(--muted);
   font-size: var(--text-meta);
-}
-
-.result-count {
   margin-bottom: 14px;
-}
-
-.publication-note {
-  margin: 22px 0 0;
 }
 
 .empty-state {
@@ -823,7 +815,7 @@ nav > a[aria-current]::after {
   }
 
   :root,
-  :root[data-theme=dark] {
+  :root[data-theme='dark'] {
     --bg: #fff;
     --text: #000;
     --muted: #444;

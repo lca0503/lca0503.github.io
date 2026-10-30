@@ -160,7 +160,7 @@ strong {
 .wordmark {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: var(--text);
   font-size: var(--text-secondary);
   font-weight: 600;
@@ -171,8 +171,8 @@ strong {
 }
 
 .wordmark-symbol {
-  width: 34px;
-  height: 30px;
+  width: 26px;
+  height: 18px;
   flex-shrink: 0;
   background-color: var(--accent);
   mask: url('favicon.svg') center / contain no-repeat;

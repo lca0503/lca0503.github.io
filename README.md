@@ -7,7 +7,7 @@ A small, custom Jekyll website for research and publications. Inspired by the ac
 | File | Purpose |
 | --- | --- |
 | `_config.yml` | Name, email, social profiles, and site URL |
-| `index.html` | Introduction, research interests, and highlights |
+| `index.html` | Introduction, research interests, news, and selected publications |
 | `_data/publications.json` | All publications; `selected: true` features a paper on the homepage |
 | `assets/pdf/cv.pdf` | Downloadable CV |
 | `assets/img/profile.jpeg` | Profile photograph |
@@ -23,6 +23,7 @@ Publication titles without a verified paper URL remain readable text. Add `url` 
 - Use present tense for current research and past tense for completed experience and news. End descriptive sentences with a period.
 - Use abbreviated months without periods and en dashes for ranges: `Jun–Nov 2023`, `Sep 2024–present`. Do not add dates more precise than the source.
 - Keep contact labels and research terminology consistent across pages. Shared typography lives in `assets/style.css`.
+- Use “Read paper” and “View code” for publication links. Preserve source-specific spellings in bibliographic author lists.
 
 ## Preview locally
 

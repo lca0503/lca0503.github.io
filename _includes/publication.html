@@ -7,6 +7,6 @@
     <p class="authors">{{ paper.authors | escape | replace: 'Chen-An Li', '<strong>Chen-An Li</strong>' }}</p>
     <p class="venue">{{ paper.venue | escape }}{% if paper.award %}<span class="award">{{ paper.award | escape }}</span>{% endif %}</p>
     {% if paper.summary %}<p class="paper-summary">{{ paper.summary | escape }}</p>{% endif %}
-    {% if paper.url or paper.code %}<div class="paper-links">{% if paper.url %}<a href="{{ paper.url }}" target="_blank" rel="noopener" aria-label="Read paper: {{ paper.title | escape }}">Paper <span aria-hidden="true">↗</span></a>{% endif %}{% if paper.code %}<a href="{{ paper.code }}" target="_blank" rel="noopener" aria-label="View code: {{ paper.title | escape }}">Code <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}
+    {% if paper.url or paper.code %}<div class="paper-links">{% if paper.url %}<a href="{{ paper.url }}" target="_blank" rel="noopener" aria-label="Read paper: {{ paper.title | escape }}">Read paper <span aria-hidden="true">↗</span></a>{% endif %}{% if paper.code %}<a href="{{ paper.code }}" target="_blank" rel="noopener" aria-label="View code: {{ paper.title | escape }}">View code <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}
   </div>
 </article>

@@ -19,6 +19,5 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
-  - LICENSE
   - dist
   - .openai

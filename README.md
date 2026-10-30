@@ -16,6 +16,15 @@ A small, custom Jekyll website for research, publications, and academic backgrou
 
 Publication titles without a verified paper URL remain readable text. Add `url` and optional `code` fields to link them. All papers are present in the generated HTML, including when JavaScript is disabled; JavaScript adds search, filters, and a saved color-theme preference.
 
+## Writing style
+
+- Use sentence case for headings, roles, and interface labels; omit final punctuation from headings.
+- Preserve official capitalization in publication titles, author names, institutions, courses, and awards.
+- Use “and” in site copy, while retaining symbols that belong to official names or titles.
+- Use present tense for current research and past tense for completed experience and news. End descriptive sentences with a period.
+- Use abbreviated months without periods and en dashes for ranges: `Jun–Nov 2023`, `Sep 2024–present`. Do not add dates more precise than the source.
+- Keep contact labels and research terminology consistent across pages. Shared typography lives in `assets/style.css`.
+
 ## Preview locally
 
 Use Ruby 3.3 or newer:

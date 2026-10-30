@@ -30,7 +30,7 @@
       paper.hidden = !matches;
       visible += Number(matches);
     }
-    count.textContent = `${visible} ${visible === 1 ? 'result' : 'results'}${search.value.trim() ? ` for “${search.value.trim()}”` : ''}`;
+    count.textContent = `${visible} ${visible === 1 ? 'paper' : 'papers'}${search.value.trim() ? ` matching “${search.value.trim()}”` : ''}`;
     empty.hidden = visible !== 0;
     for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.filter === filter));
   };

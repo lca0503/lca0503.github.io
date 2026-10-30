@@ -1,11 +1,12 @@
 {% assign paper = include.paper %}
+{% assign heading = include.heading | default: 'h3' %}
 <article class="publication" data-type="{{ paper.type }}" data-search="{{ paper.title | append: ' ' | append: paper.authors | append: ' ' | append: paper.venue | append: ' ' | append: paper.year | downcase | escape }}">
   <div class="publication-year">{{ paper.year }}{% if paper.type == 'preprint' %}<span>Preprint</span>{% endif %}</div>
   <div class="publication-body">
-    <h3>{% if paper.url %}<a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</h3>
+    <{{ heading }} class="publication-title">{% if paper.url %}<a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</{{ heading }}>
     <p class="authors">{{ paper.authors | escape | replace: 'Chen-An Li', '<strong>Chen-An Li</strong>' }}</p>
     <p class="venue">{{ paper.venue | escape }}{% if paper.award %}<span class="award">{{ paper.award | escape }}</span>{% endif %}</p>
     {% if paper.summary %}<p class="paper-summary">{{ paper.summary | escape }}</p>{% endif %}
-    {% if paper.url or paper.code %}<div class="paper-links">{% if paper.url %}<a href="{{ paper.url }}" target="_blank" rel="noopener" aria-label="Read paper: {{ paper.title | escape }}">Paper <span aria-hidden="true">↗</span></a>{% endif %}{% if paper.code %}<a href="{{ paper.code }}" target="_blank" rel="noopener" aria-label="Code for {{ paper.title | escape }}">Code <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}
+    {% if paper.url or paper.code %}<div class="paper-links">{% if paper.url %}<a href="{{ paper.url }}" target="_blank" rel="noopener" aria-label="Read paper: {{ paper.title | escape }}">Paper <span aria-hidden="true">↗</span></a>{% endif %}{% if paper.code %}<a href="{{ paper.code }}" target="_blank" rel="noopener" aria-label="View code: {{ paper.title | escape }}">Code <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}
   </div>
 </article>

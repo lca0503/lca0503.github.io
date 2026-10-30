@@ -3,7 +3,7 @@
     "id": "inspire",
     "title": "INSPIRE: A Benchmark for Instruction-Aware Speech Retrieval",
     "authors": "Chen-An Li, Hung-yi Lee",
-    "venue": "Interspeech 2026 · Long Paper",
+    "venue": "Interspeech 2026 · long paper",
     "year": 2026,
     "type": "publication",
     "selected": true,
@@ -175,7 +175,7 @@
   },
   {
     "id": "continual-pretraining-forgetting",
-    "title": "Examining Forgetting in Continual Pre-Training of Aligned Large Language Models",
+    "title": "Examining Forgetting in Continual Pre-training of Aligned Large Language Models",
     "authors": "Chen-An Li, Hung-Yi Lee",
     "venue": "arXiv:2401.03129",
     "year": 2024,

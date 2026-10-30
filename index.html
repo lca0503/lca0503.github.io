@@ -3,23 +3,29 @@ layout: default
 section: about
 ---
 <section class="intro" aria-labelledby="intro-title">
+  <aside class="profile-note" aria-label="Profile and contact">
+    <div class="profile-identity">
+      <img class="profile-photo" src="{{ '/assets/img/profile.jpeg' | relative_url }}" alt="Chen-An Li (李晨安) by Sydney Harbour" width="225" height="260" fetchpriority="high">
+      <p class="profile-name">Chen-An Li <span lang="zh-Hant">(李晨安)</span></p>
+    </div>
+    <div class="profile-details">
+      <p class="profile-role">Ph.D. student</p>
+      <p>Speech Processing and<br>Machine Learning Laboratory<br><a href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener">National Taiwan University</a></p>
+      <p class="location">Taipei, Taiwan</p>
+      <a class="aside-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a class="aside-linkedin" href="{{ site.linkedin_url }}" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+    </div>
+  </aside>
   <div class="intro-copy">
-    <h1 id="intro-title">Chen-An Li</h1>
-    <p class="intro-role">Ph.D. student at <a href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener">National Taiwan University</a></p>
+    <h1 id="intro-title">About me</h1>
     <div class="bio">
-      <p>I am a Ph.D. student in the <a href="https://gice.ntu.edu.tw/" target="_blank" rel="noopener">Graduate Institute of Communication Engineering</a> at National Taiwan University, advised by <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank" rel="noopener">Prof. Hung-yi Lee</a>.</p>
+      <p>I am a Ph.D. student in the <a href="https://gice.ntu.edu.tw/" target="_blank" rel="noopener">Graduate Institute of Communication Engineering</a> at <a href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener">National Taiwan University</a>, advised by <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank" rel="noopener">Prof. Hung-yi Lee</a>.</p>
       <p>My research focuses on <strong>speech and language processing</strong>, especially instruction-aware speech retrieval, large audio-language models, and self-supervised speech representations.</p>
-      <p>Previously, I received my B.S. in <a href="https://www.csie.ntu.edu.tw/" target="_blank" rel="noopener">Computer Science and Information Engineering</a> from NTU, where I worked with <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank" rel="noopener">Prof. Hung-yi Lee</a> and <a href="https://www.csie.ntu.edu.tw/~yvchen/" target="_blank" rel="noopener">Prof. Yun-Nung (Vivian) Chen</a>. I have also been a research intern at <a href="https://www.asus.com/" target="_blank" rel="noopener">ASUS</a> and <a href="https://www.iis.sinica.edu.tw/en/index.html" target="_blank" rel="noopener">Academia Sinica</a>.</p>
+      <p>I received my B.S. in <a href="https://www.csie.ntu.edu.tw/" target="_blank" rel="noopener">Computer Science and Information Engineering</a> from <a href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener">NTU</a> in 2023. During my undergraduate studies, I worked with <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank" rel="noopener">Prof. Hung-yi Lee</a> and <a href="https://www.csie.ntu.edu.tw/~yvchen/" target="_blank" rel="noopener">Prof. Yun-Nung (Vivian) Chen</a>. I also completed research internships at <a href="https://www.asus.com/" target="_blank" rel="noopener">ASUS</a> and the <a href="https://www.iis.sinica.edu.tw/en/index.html" target="_blank" rel="noopener">Institute of Information Science, Academia Sinica</a>.</p>
     </div>
     <div class="contact-links"><a class="primary-link" href="mailto:{{ site.email }}">Email <span aria-hidden="true">↗</span></a><a href="{{ site.scholar_url }}" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a><a href="{{ site.github_url }}" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a><a href="{{ site.x_url }}" target="_blank" rel="noopener">X <span aria-hidden="true">↗</span></a><a href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a></div>
   </div>
-  <aside class="profile-note" aria-label="Affiliation and contact">
-    <img class="profile-photo" src="{{ '/assets/img/profile.jpeg' | relative_url }}" alt="Chen-An Li by Sydney Harbour" width="235" height="270" fetchpriority="high">
-    <p>Speech Processing &<br>Machine Learning Laboratory<br><strong>National Taiwan University</strong></p>
-    <p class="location">Taipei, Taiwan</p>
-    <a class="aside-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-    <a class="aside-linkedin" href="{{ site.linkedin_url }}" target="_blank" rel="noopener">LinkedIn ↗</a>
-  </aside>
+
 </section>
 
 <section class="research-section" aria-labelledby="research-heading">
@@ -34,15 +40,15 @@ section: about
 <section class="highlights-section" aria-labelledby="highlights-heading">
   <div class="section-heading"><h2 id="highlights-heading">News</h2></div>
   <div class="highlights">
-    <div><time>2026</time><p><a href="https://arxiv.org/abs/2608.16203" target="_blank" rel="noopener"><strong>INSPIRE</strong></a>, our benchmark for instruction-aware speech retrieval, is an Interspeech 2026 long paper.</p></div>
-    <div><time>2026</time><p>Our paper <a href="https://arxiv.org/abs/2510.00626" target="_blank" rel="noopener">When Silence Matters</a> appeared at <strong>ICASSP 2026</strong>.</p></div>
-    <div><time>2025</time><p>Our work on <a href="https://aclanthology.org/2025.acl-short.72/" target="_blank" rel="noopener">transferring textual preferences to vision-language understanding</a> appeared at ACL 2025.</p></div>
-    <div><time datetime="2024-09">Sep 2024</time><p>Started my Ph.D. at National Taiwan University, advised by Prof. Hung-yi Lee.</p></div>
+    <div><time datetime="2026">2026</time><p>Our paper <a href="https://arxiv.org/abs/2608.16203" target="_blank" rel="noopener">INSPIRE</a> appeared as a long paper at Interspeech 2026.</p></div>
+    <div><time datetime="2026">2026</time><p>Our paper <a href="https://arxiv.org/abs/2510.00626" target="_blank" rel="noopener">When Silence Matters</a> appeared at ICASSP 2026.</p></div>
+    <div><time datetime="2025">2025</time><p>Our paper <a href="https://aclanthology.org/2025.acl-short.72/" target="_blank" rel="noopener">Transferring Textual Preferences to Vision-Language Understanding through Model Merging</a> appeared at ACL 2025.</p></div>
+    <div><time datetime="2024-09">Sep 2024</time><p>I started my Ph.D. at <a href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener">National Taiwan University</a>, advised by <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank" rel="noopener">Prof. Hung-yi Lee</a>.</p></div>
   </div>
 </section>
 
 <section aria-labelledby="papers-heading">
-  <div class="section-heading"><h2 id="papers-heading">Selected publications</h2><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications →</a></div>
+  <div class="section-heading"><h2 id="papers-heading">Selected publications</h2><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a></div>
   <div class="publication-list">{% assign selected_papers = site.data.publications | where: 'selected', true %}{% for paper in selected_papers %}{% include publication.html paper=paper %}{% endfor %}</div>
 </section>
 

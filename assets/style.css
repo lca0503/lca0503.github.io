@@ -171,15 +171,11 @@ strong {
 }
 
 .wordmark-symbol {
-  font-size: var(--text-meta);
-  letter-spacing: 0.06em;
-  color: var(--accent);
   width: 30px;
   height: 30px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 4px;
+  flex-shrink: 0;
+  background-color: var(--accent);
+  mask: url('favicon.svg') center / contain no-repeat;
 }
 
 nav {

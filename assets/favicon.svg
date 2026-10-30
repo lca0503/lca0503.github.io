@@ -1,13 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#137566"/>
-  <text
-    x="32"
-    y="42"
-    text-anchor="middle"
-    fill="#f9faf7"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="27"
-    font-weight="600"
-    letter-spacing="1"
-  >CA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <style>
+    :root {
+      color: #196c5f;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color: #91ccb7;
+      }
+    }
+  </style>
+  <path
+    d="M5 10.5V3.5l4.3 3.3a12 12 0 0 1 5.4 0L19 3.5v7c1 1.1 1.5 2.6 1.5 4.2 0 4.3-3.6 6.3-8.5 6.3s-8.5-2-8.5-6.3c0-1.6.5-3.1 1.5-4.2Z"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <g fill="currentColor">
+    <circle cx="8.5" cy="13.5" r="0.9"/>
+    <circle cx="15.5" cy="13.5" r="0.9"/>
+    <path d="m10.8 16.5 1.2 1.4 1.2-1.4Z"/>
+  </g>
 </svg>

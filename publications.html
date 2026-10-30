@@ -16,7 +16,7 @@ description: Publications and preprints by Chen-An Li in speech, language, and m
       All <span>{{ site.data.publications | size }}</span>
     </button>
     <button type="button" data-filter="publication" aria-pressed="false">
-      Publications <span>{{ site.data.publications | where: 'type', 'publication' | size }}</span>
+      Published papers <span>{{ site.data.publications | where: 'type', 'publication' | size }}</span>
     </button>
     <button type="button" data-filter="preprint" aria-pressed="false">
       Preprints <span>{{ site.data.publications | where: 'type', 'preprint' | size }}</span>

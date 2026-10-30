@@ -1,0 +1,206 @@
+[
+  {
+    "id": "inspire",
+    "title": "INSPIRE: A Benchmark for Instruction-Aware Speech Retrieval",
+    "authors": "Chen-An Li, Hung-yi Lee",
+    "venue": "Interspeech 2026 · Long Paper",
+    "year": 2026,
+    "type": "publication",
+    "selected": true,
+    "url": "https://arxiv.org/abs/2608.16203",
+    "code": "https://github.com/lca0503/INSPIRE",
+    "summary": "A benchmark for speech retrieval guided by natural-language instructions, evaluating how systems handle semantic content, speaker identity, speaking style, environmental sounds, and combinations of these attributes."
+  },
+  {
+    "id": "hearing-the-order",
+    "title": "Hearing the Order: Investigating Selection Bias in Large Audio-Language Models",
+    "authors": "Yu-Xiang Lin*, Chen-An Li*, Sheng-Lun Wei, Po-Chun Chen, Hsin-Hsi Chen, Hung-yi Lee",
+    "venue": "Interspeech 2026",
+    "year": 2026,
+    "type": "publication",
+    "selected": true,
+    "url": "https://arxiv.org/abs/2510.00628",
+    "summary": "An investigation of answer-order bias in large audio-language models, showing how rearranging choices affects performance and exploring permutation-based strategies to improve evaluation reliability."
+  },
+  {
+    "id": "all-that-glitters",
+    "title": "All That Glitters Is Not Audio: Rethinking Text Priors and Audio Reliance in Audio-Language Evaluation",
+    "authors": "Leonardo Haw-Yang Foo*, Chih-Kai Yang*, Chen-An Li, Ke-Han Lu, Hung-yi Lee",
+    "venue": "Interspeech 2026",
+    "year": 2026,
+    "type": "publication",
+    "selected": false
+  },
+  {
+    "id": "adasearch",
+    "title": "AdaSearch: Balancing Parametric Knowledge and Search in Large Language Models via Reinforcement Learning",
+    "authors": "Tzu-Han Lin, Wei-Lin Chen, Chen-An Li, Hung-yi Lee, Yun-Nung Chen, Yu Meng",
+    "venue": "EMNLP 2026",
+    "year": 2026,
+    "type": "publication",
+    "selected": false,
+    "url": "https://arxiv.org/abs/2512.16883",
+    "code": "https://github.com/MiuLab/AdaSearch"
+  },
+  {
+    "id": "breezyvoice",
+    "title": "BreezyVoice: Adapting TTS for Taiwanese Mandarin with Enhanced Polyphone Disambiguation—Challenges and Insights",
+    "authors": "Chan-Jan Hsu, Yi-Cheng Lin, Chia-Chun Lin, Wei-Chih Chen, Ho Lam Chung, Chen-An Li, Yi-Chang Chen et al.",
+    "venue": "ISCSLP 2026",
+    "year": 2026,
+    "type": "publication",
+    "selected": false
+  },
+  {
+    "id": "when-silence-matters",
+    "title": "When Silence Matters: The Impact of Irrelevant Audio on Text Reasoning in Large Audio-Language Models",
+    "authors": "Chen-An Li, Tzu-Han Lin, Hung-yi Lee",
+    "venue": "ICASSP 2026",
+    "year": 2026,
+    "type": "publication",
+    "selected": true,
+    "url": "https://arxiv.org/abs/2510.00626",
+    "summary": "A study of cross-modal interference showing that irrelevant audio, including silence and noise, can undermine text reasoning in large audio-language models and destabilize their predictions."
+  },
+  {
+    "id": "mergetovlrm",
+    "title": "Transferring Textual Preferences to Vision-Language Understanding through Model Merging",
+    "authors": "Chen-An Li, Tzu-Han Lin, Yun-Nung Chen, Hung-yi Lee",
+    "venue": "ACL 2025",
+    "year": 2025,
+    "type": "publication",
+    "selected": true,
+    "url": "https://aclanthology.org/2025.acl-short.72/",
+    "code": "https://github.com/lca0503/MergeToVLRM",
+    "summary": "A training-free approach that merges text-based reward models with large vision-language models to transfer textual preferences and improve the evaluation of multimodal outputs."
+  },
+  {
+    "id": "dynamic-superb-phase-2",
+    "title": "Dynamic-SUPERB Phase-2: A Collaboratively Expanding Benchmark for Measuring the Capabilities of Spoken Language Models with 180 Tasks",
+    "authors": "Chien-yu Huang, Wei-Chih Chen, Shu-wen Yang, Andy T Liu, Chen-An Li, Yu-Xiang Lin et al.",
+    "venue": "ICLR 2025",
+    "year": 2025,
+    "type": "publication",
+    "selected": false
+  },
+  {
+    "id": "dogerm",
+    "title": "DogeRM: Equipping Reward Models with Domain Knowledge through Model Merging",
+    "authors": "Tzu-Han Lin, Chen-An Li, Hung-yi Lee, Yun-Nung Chen",
+    "venue": "EMNLP 2024",
+    "year": 2024,
+    "type": "publication",
+    "selected": true,
+    "url": "https://aclanthology.org/2024.emnlp-main.868/",
+    "code": "https://github.com/MiuLab/DogeRM",
+    "summary": "A framework that merges domain-specific language models with general reward models, integrating specialized knowledge to improve reward modeling without collecting additional domain-specific preference data."
+  },
+  {
+    "id": "multilingual-dense-retrieval",
+    "title": "Unsupervised Multilingual Dense Retrieval via Generative Pseudo Labeling",
+    "authors": "Chao-Wei Huang, Chen-An Li, Tsu-Yuan Hsu, Chen-Yu Hsu, Yun-Nung Chen",
+    "venue": "Findings of EACL 2024",
+    "year": 2024,
+    "type": "publication",
+    "selected": false
+  },
+  {
+    "id": "visually-enhanced-phrase-understanding",
+    "title": "Visually-Enhanced Phrase Understanding",
+    "authors": "Tsu-Yuan Hsu*, Chen-An Li*, Chao-Wei Huang, Yun-Nung Chen",
+    "venue": "Findings of ACL 2023",
+    "year": 2023,
+    "type": "publication",
+    "selected": true,
+    "url": "https://aclanthology.org/2023.findings-acl.363/",
+    "code": "https://github.com/MiuLab/VisualLU",
+    "summary": "A method that enriches phrase representations with generated visual cues, combining text and image encoders to improve language understanding and entity clustering across benchmark datasets."
+  },
+  {
+    "id": "converser",
+    "title": "CONVERSER: Few-Shot Conversational Dense Retrieval with Synthetic Data Generation",
+    "authors": "Chao-Wei Huang, Chen-Yu Hsu, Tsu-Yuan Hsu, Chen-An Li, Yun-Nung Chen",
+    "venue": "SIGDIAL 2023",
+    "year": 2023,
+    "type": "publication",
+    "selected": false
+  },
+  {
+    "id": "instruction-guided-voice-conversion",
+    "title": "Towards General-Purpose Text-Instruction-Guided Voice Conversion",
+    "authors": "Chun-Yi Kuan, Chen-An Li, Tsu-Yuan Hsu, Tse-Yang Lin, Ho-Lam Chung, Kai-Wei Chang, Shuo-Yiin Chang, Hung-yi Lee",
+    "venue": "ASRU 2023",
+    "year": 2023,
+    "type": "publication",
+    "selected": false
+  },
+  {
+    "id": "self-supervised-prosody",
+    "title": "On the Utility of Self-Supervised Models for Prosody-Related Tasks",
+    "authors": "Guan-Ting Lin*, Chi-Luen Feng*, Wei-Ping Huang**, Yuan Tseng**, Tzu-Han Lin**, Chen-An Li**, Hung-yi Lee, Nigel G Ward",
+    "venue": "SLT 2022",
+    "year": 2022,
+    "type": "publication",
+    "selected": false,
+    "award": "Best Paper Award"
+  },
+  {
+    "id": "self-supervised-audio-representations",
+    "title": "The Efficacy of Self-Supervised Speech Models for Audio Representations",
+    "authors": "Tung-Yu Wu*, Tsu-Yuan Hsu*, Chen-An Li*, Tzu-Han Lin*, Hung-yi Lee",
+    "venue": "PMLR 2022",
+    "year": 2022,
+    "type": "publication",
+    "selected": false
+  },
+  {
+    "id": "gpt4o-voice-mode",
+    "title": "A Preliminary Exploration with GPT-4o Voice Mode",
+    "authors": "Yu-Xiang Lin, Chih-Kai Yang, Wei-Chih Chen, Chen-An Li, Chien-yu Huang, Xuanjun Chen, Hung-yi Lee",
+    "venue": "arXiv:2502.09940",
+    "year": 2025,
+    "type": "preprint",
+    "selected": false,
+    "url": "https://arxiv.org/abs/2502.09940"
+  },
+  {
+    "id": "taiwanese-mandarin-slm",
+    "title": "Building a Taiwanese Mandarin Spoken Language Model: A First Attempt",
+    "authors": "Chih-Kai Yang, Yu-Kuan Fu, Chen-An Li, Yi-Cheng Lin, Yu-Xiang Lin, Wei-Chih Chen, Ho Lam Chung et al.",
+    "venue": "arXiv:2411.07111",
+    "year": 2024,
+    "type": "preprint",
+    "selected": false,
+    "url": "https://arxiv.org/abs/2411.07111"
+  },
+  {
+    "id": "continual-pretraining-forgetting",
+    "title": "Examining Forgetting in Continual Pre-Training of Aligned Large Language Models",
+    "authors": "Chen-An Li, Hung-Yi Lee",
+    "venue": "arXiv:2401.03129",
+    "year": 2024,
+    "type": "preprint",
+    "selected": false,
+    "url": "https://arxiv.org/abs/2401.03129"
+  },
+  {
+    "id": "unsupervised-speech-translation",
+    "title": "Improving Cascaded Unsupervised Speech Translation with Denoising Back-Translation",
+    "authors": "Yu-Kuan Fu*, Liang-Hsuan Tseng*, Jiatong Shi, Chen-An Li, Tsu-Yuan Hsu, Shinji Watanabe, Hung-yi Lee",
+    "venue": "arXiv:2305.07455",
+    "year": 2023,
+    "type": "preprint",
+    "selected": false,
+    "url": "https://arxiv.org/abs/2305.07455"
+  },
+  {
+    "id": "model-extraction-attack",
+    "title": "Model Extraction Attack against Self-Supervised Speech Models",
+    "authors": "Tsu-Yuan Hsu*, Chen-An Li*, Tung-Yu Wu, Hung-yi Lee",
+    "venue": "arXiv:2211.16044",
+    "year": 2022,
+    "type": "preprint",
+    "selected": false,
+    "url": "https://arxiv.org/abs/2211.16044"
+  }
+]

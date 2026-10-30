@@ -1,0 +1,24 @@
+title: Chen-An Li
+description: >-
+  Chen-An Li is a Ph.D. student at National Taiwan University, researching
+  speech retrieval, large audio-language models, and self-supervised speech models.
+url: https://lca0503.github.io
+baseurl: ""
+email: f13942069@ntu.edu.tw
+github_url: https://github.com/lca0503
+scholar_url: https://scholar.google.com/citations?user=QOAVnwQAAAAJ
+x_url: https://x.com/lca0503
+linkedin_url: https://www.linkedin.com/in/chen-an-li/
+lang: en
+timezone: Asia/Taipei
+destination: dist
+markdown: kramdown
+strict_front_matter: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - LICENSE
+  - dist
+  - .openai

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Publications
+section: publications
+permalink: /publications/
+description: Publications and preprints by Chen-An Li in speech, language, and machine learning.
+---
+<header class="page-heading"><h1>Publications</h1><p>Conference papers, workshop papers, and preprints.</p></header>
+<div class="publication-controls" hidden>
+  <div class="filter-buttons" role="group" aria-label="Filter publications"><button type="button" data-filter="all" aria-pressed="true">All work <span>{{ site.data.publications | size }}</span></button><button type="button" data-filter="publication" aria-pressed="false">Published <span>{{ site.data.publications | where: 'type', 'publication' | size }}</span></button><button type="button" data-filter="preprint" aria-pressed="false">Preprints <span>{{ site.data.publications | where: 'type', 'preprint' | size }}</span></button></div>
+  <label class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search publications</span><input id="publication-search" type="search" placeholder="Search title, author, venue…" autocomplete="off"></label>
+</div>
+<p id="result-count" class="result-count" role="status" aria-live="polite">{{ site.data.publications | size }} publications and preprints</p>
+<div class="publication-list" id="all-publications">{% assign years = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}{% for year in years %}{% for paper in year.items %}{% include publication.html paper=paper %}{% endfor %}{% endfor %}</div>
+<div class="empty-state" id="no-results" hidden><h2>No matching publications.</h2><p>Try another title, author, year, or venue.</p><button type="button" id="reset-search">Clear search & filters</button></div>
+<p class="publication-note">Publication details are based on my September 2026 CV. Author contribution markers are retained as listed in the CV.</p>

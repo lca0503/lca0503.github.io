@@ -1,6 +1,6 @@
 # Chen-An Li’s personal website
 
-A small, custom Jekyll website for research, publications, and academic background. Inspired by the academic organization of [al-folio](https://github.com/alshedivat/al-folio) and [Tzu-Han Lin’s site](https://github.com/hank0316/hank0316.github.io), with original layouts, styling, and JavaScript. No full theme, sample pages, or third-party frontend libraries are included.
+A small, custom Jekyll website for research and publications. Inspired by the academic organization of [al-folio](https://github.com/alshedivat/al-folio) and [Tzu-Han Lin’s site](https://github.com/hank0316/hank0316.github.io), with original layouts, styling, and JavaScript. No full theme, sample pages, or third-party frontend libraries are included.
 
 ## Edit content
 
@@ -9,7 +9,6 @@ A small, custom Jekyll website for research, publications, and academic backgrou
 | `_config.yml` | Name, email, social profiles, and site URL |
 | `index.html` | Introduction, research interests, and highlights |
 | `_data/publications.json` | All publications; `selected: true` features a paper on the homepage |
-| `background.html` | Education, research, teaching, and service |
 | `assets/pdf/cv.pdf` | Downloadable CV |
 | `assets/img/profile.jpeg` | Profile photograph |
 | `assets/style.css` | Colors, typography, and responsive layout |

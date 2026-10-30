@@ -35,4 +35,4 @@ In the repository’s **Settings → Pages**, select **GitHub Actions** as the s
 
 ## Content notes
 
-The profile and publication list are based on the supplied September 28, 2026 CV. Selected paper links and summaries were checked against the papers. The displayed email was confirmed as `f13942069@ntu.edu.tw`. The original CV download is preserved, including its original email hyperlink. The profile photo is the supplied `me.jpeg`, displayed with a CSS crop; the original is unchanged.
+The profile and publication list are based on the supplied September 28, 2026 CV. Selected paper links and summaries were checked against the papers. The displayed email was confirmed as `f13942069@ntu.edu.tw`. The downloadable CV was replaced with the revised PDF supplied on October 30, 2026; its email link now matches the displayed address. The profile photo is the supplied `me.jpeg`, displayed with a CSS crop; the original is unchanged.

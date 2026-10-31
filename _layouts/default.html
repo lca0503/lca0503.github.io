@@ -11,7 +11,8 @@
     <meta property="og:description" content="{{ site.description | strip | escape }}">
     <meta property="og:type" content="website">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
-    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}?v={{ site.time | date: '%s' }}" sizes="16x16 32x32 48x48" type="image/x-icon">
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}?v={{ site.time | date: '%s' }}" sizes="any" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
     <script>
       try {

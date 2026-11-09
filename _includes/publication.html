@@ -16,11 +16,11 @@
         aria-label="View figure: {{ paper.title | escape }}"
       >
         <img
-          src="{{ paper.figure.src | relative_url }}"
+          src="{{ paper.figure.thumbnail | default: paper.figure.src | relative_url }}"
           alt="{{ paper.figure.alt | escape }}"
           width="{{ paper.figure.width }}"
           height="{{ paper.figure.height }}"
-          loading="lazy"
+          loading="eager"
           decoding="async"
         >
       </a>

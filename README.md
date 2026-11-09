@@ -28,8 +28,8 @@ Clean generated files: `bundle exec jekyll clean`
 | `_includes/contact-links.html` | Contact links shared by the homepage and footer |
 | `assets/style.css` | Site styles |
 | `assets/site.js` | Theme switch and publication search |
-| `assets/img/profile.jpeg` | Profile photo |
-| `assets/img/publications/` | Figures from selected papers |
+| `assets/img/profile.webp` | Profile photo |
+| `assets/img/publications/` | Full figures and thumbnails from selected papers |
 | `assets/pdf/cv.pdf` | CV |
 
 ## Deployment

@@ -3,6 +3,7 @@
     "id": "iris-embed",
     "figure": {
       "src": "/assets/img/publications/iris-embed.webp",
+      "thumbnail": "/assets/img/publications/iris-embed-thumb.webp",
       "alt": "Figure 1: IRIS-Embed retrieval and contrastive training with shared encoders and instruction-aware audio layer weighting.",
       "width": 1188,
       "height": 1200
@@ -34,6 +35,7 @@
     "id": "inspire",
     "figure": {
       "src": "/assets/img/publications/inspire.webp",
+      "thumbnail": "/assets/img/publications/inspire-thumb.webp",
       "alt": "Figure 1: Instruction-aware speech retrieval by content, speaker, style, background, or combined intent.",
       "width": 1200,
       "height": 722
@@ -61,6 +63,7 @@
     "id": "hearing-the-order",
     "figure": {
       "src": "/assets/img/publications/hearing-the-order.webp",
+      "thumbnail": "/assets/img/publications/hearing-the-order-thumb.webp",
       "alt": "Figure 1: Changes in accuracy across six audio-language models when correct answers move between option positions.",
       "width": 1200,
       "height": 701
@@ -128,6 +131,7 @@
     "id": "when-silence-matters",
     "figure": {
       "src": "/assets/img/publications/when-silence-matters.webp",
+      "thumbnail": "/assets/img/publications/when-silence-matters-thumb.webp",
       "alt": "Figure 1: Irrelevant audio enters a large audio-language model and disrupts a text reasoning task.",
       "width": 1200,
       "height": 368
@@ -163,6 +167,7 @@
     "id": "mergetovlrm",
     "figure": {
       "src": "/assets/img/publications/mergetovlrm.webp",
+      "thumbnail": "/assets/img/publications/mergetovlrm-thumb.webp",
       "alt": "Figure 1: A text reward model merges with a vision-language model to create a vision-language reward model.",
       "width": 1200,
       "height": 986
@@ -210,6 +215,7 @@
     "id": "dogerm",
     "figure": {
       "src": "/assets/img/publications/dogerm.webp",
+      "thumbnail": "/assets/img/publications/dogerm-thumb.webp",
       "alt": "Figure 1: DogeRM merges a general reward model with a domain-specific language model.",
       "width": 1200,
       "height": 1031
@@ -257,6 +263,7 @@
     "id": "visually-enhanced-phrase-understanding",
     "figure": {
       "src": "/assets/img/publications/visually-enhanced-phrase-understanding.webp",
+      "thumbnail": "/assets/img/publications/visually-enhanced-phrase-understanding-thumb.webp",
       "alt": "Figure 1: Generated images and CLIP encoders produce visually enhanced phrase embeddings for entity clustering.",
       "width": 1200,
       "height": 450

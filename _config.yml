@@ -12,7 +12,6 @@ linkedin_url: https://www.linkedin.com/in/chen-an-li/
 lang: en
 timezone: Asia/Taipei
 destination: dist
-markdown: kramdown
 strict_front_matter: true
 exclude:
   - Gemfile

@@ -1,14 +1,36 @@
 {% assign paper = include.paper %}
 {% assign heading = include.heading | default: 'h3' %}
+{% capture search_text %}{{ paper.title }} {{ paper.authors }} {{ paper.venue }} {{ paper.year }}{% endcapture %}
 <article
-  class="publication"
+  class="publication{% if include.show_figure and paper.figure %} publication--illustrated{% endif %}"
   data-type="{{ paper.type }}"
-  data-search="{{ paper.title | append: ' ' | append: paper.authors | append: ' ' | append: paper.venue | append: ' ' | append: paper.year | downcase | escape }}"
+  data-search="{{ search_text | downcase | escape }}"
 >
-  <div class="publication-year">
-    {{ paper.year }}
-    {% if paper.type == 'preprint' %}
-      <span>Preprint</span>
+  <div>
+    {% if include.show_figure and paper.figure %}
+      <a
+        class="publication-figure"
+        href="{{ paper.figure.src | relative_url }}"
+        target="_blank"
+        rel="noopener"
+        aria-label="View figure: {{ paper.title | escape }}"
+      >
+        <img
+          src="{{ paper.figure.src | relative_url }}"
+          alt="{{ paper.figure.alt | escape }}"
+          width="{{ paper.figure.width }}"
+          height="{{ paper.figure.height }}"
+          loading="lazy"
+          decoding="async"
+        >
+      </a>
+    {% else %}
+      <div class="publication-year">
+        {{ paper.year }}
+        {% if paper.type == 'preprint' %}
+          <span>Preprint</span>
+        {% endif %}
+      </div>
     {% endif %}
   </div>
   <div>

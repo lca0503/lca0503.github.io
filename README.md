@@ -20,14 +20,16 @@ Clean generated files: `bundle exec jekyll clean`
 | File | Purpose |
 | --- | --- |
 | `_config.yml` | Site settings and contact links |
-| `index.html` | About, research interests, and news |
+| `index.html` | About, research interests, news, and selected publications |
 | `publications.html` | Publication list and search controls |
 | `_data/publications.json` | Publication records; `selected` marks homepage entries |
 | `_layouts/default.html` | Shared page layout |
 | `_includes/publication.html` | Publication entry template |
+| `_includes/contact-links.html` | Contact links shared by the homepage and footer |
 | `assets/style.css` | Site styles |
 | `assets/site.js` | Theme switch and publication search |
 | `assets/img/profile.jpeg` | Profile photo |
+| `assets/img/publications/` | Figures from selected papers |
 | `assets/pdf/cv.pdf` | CV |
 
 ## Deployment

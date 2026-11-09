@@ -1,9 +1,46 @@
 [
   {
+    "id": "iris-embed",
+    "figure": {
+      "src": "/assets/img/publications/iris-embed.webp",
+      "alt": "Figure 1: IRIS-Embed retrieval and contrastive training with shared encoders and instruction-aware audio layer weighting.",
+      "width": 1188,
+      "height": 1200
+    },
+    "title": "Improving Large Audio-Language Model Embedding Baselines for Instruction-Aware Speech Retrieval",
+    "authors": "Chen-An Li, Cheng-Han Chiang, Hung-yi Lee",
+    "venue": "arXiv:2611.09122",
+    "year": 2026,
+    "type": "preprint",
+    "selected": true,
+    "url": "https://arxiv.org/abs/2611.09122",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/lca0503/IRIS"
+      },
+      {
+        "label": "Model",
+        "url": "https://huggingface.co/lca0503/IRIS-Embed-Qwen2.5-Omni-3B"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://huggingface.co/datasets/lca0503/IRIS-Data"
+      }
+    ],
+    "summary": "IRIS-Embed combines contrastive training and instruction-aware audio layer weighting to improve speech retrieval and performance on general audio tasks."
+  },
+  {
     "id": "inspire",
+    "figure": {
+      "src": "/assets/img/publications/inspire.webp",
+      "alt": "Figure 1: Instruction-aware speech retrieval by content, speaker, style, background, or combined intent.",
+      "width": 1200,
+      "height": 722
+    },
     "title": "INSPIRE: A Benchmark for Instruction-Aware Speech Retrieval",
     "authors": "Chen-An Li, Hung-yi Lee",
-    "venue": "Interspeech 2026 · long paper",
+    "venue": "Interspeech 2026 · Long Paper",
     "year": 2026,
     "type": "publication",
     "selected": true,
@@ -18,10 +55,16 @@
         "url": "https://huggingface.co/datasets/lca0503/INSPIRE"
       }
     ],
-    "summary": "A benchmark for speech retrieval guided by natural-language instructions, evaluating how systems handle semantic content, speaker identity, speaking style, environmental sounds, and combinations of these attributes."
+    "summary": "INSPIRE evaluates speech retrieval guided by instructions about content, speaker identity, speaking style, background sounds, or combinations of these attributes."
   },
   {
     "id": "hearing-the-order",
+    "figure": {
+      "src": "/assets/img/publications/hearing-the-order.webp",
+      "alt": "Figure 1: Changes in accuracy across six audio-language models when correct answers move between option positions.",
+      "width": 1200,
+      "height": 701
+    },
     "title": "Hearing the Order: Investigating Position Bias in Large Audio-Language Models",
     "authors": "Yu-Xiang Lin*, Chen-An Li*, Sheng-Lun Wei, Po-Chun Chen, Hsin-Hsi Chen, Hung-yi Lee",
     "venue": "Interspeech 2026",
@@ -29,7 +72,7 @@
     "type": "publication",
     "selected": true,
     "url": "https://arxiv.org/abs/2510.00628",
-    "summary": "An investigation of answer-order bias in large audio-language models, showing how rearranging choices affects performance and exploring permutation-based strategies to improve evaluation reliability."
+    "summary": "This study examines how answer order affects large audio-language models and explores permutation-based strategies for more reliable evaluation."
   },
   {
     "id": "all-that-glitters",
@@ -51,6 +94,10 @@
     "selected": false,
     "url": "https://arxiv.org/abs/2512.16883",
     "resources": [
+      {
+        "label": "Code",
+        "url": "https://github.com/hank0316/AdaSearch"
+      },
       {
         "label": "Models",
         "url": "https://huggingface.co/collections/hank0316/adasearch"
@@ -79,6 +126,12 @@
   },
   {
     "id": "when-silence-matters",
+    "figure": {
+      "src": "/assets/img/publications/when-silence-matters.webp",
+      "alt": "Figure 1: Irrelevant audio enters a large audio-language model and disrupts a text reasoning task.",
+      "width": 1200,
+      "height": 368
+    },
     "title": "When Silence Matters: The Impact of Irrelevant Audio on Text Reasoning in Large Audio-Language Models",
     "authors": "Chen-An Li, Tzu-Han Lin, Hung-yi Lee",
     "venue": "ICASSP 2026",
@@ -92,22 +145,28 @@
         "url": "https://github.com/lca0503/AudioInterference"
       },
       {
-        "label": "GSM8K data",
+        "label": "GSM8K dataset",
         "url": "https://huggingface.co/datasets/lca0503/audio_interference_gsm8k"
       },
       {
-        "label": "MMLU data",
+        "label": "MMLU dataset",
         "url": "https://huggingface.co/datasets/lca0503/audio_interference_mmlu"
       },
       {
-        "label": "ARC-Challenge data",
+        "label": "ARC-Challenge dataset",
         "url": "https://huggingface.co/datasets/lca0503/audio_interference_arc_challenge"
       }
     ],
-    "summary": "A study of cross-modal interference showing that irrelevant audio, including silence and noise, can undermine text reasoning in large audio-language models and destabilize their predictions."
+    "summary": "This study shows that irrelevant audio, including silence and noise, can disrupt text reasoning in large audio-language models."
   },
   {
     "id": "mergetovlrm",
+    "figure": {
+      "src": "/assets/img/publications/mergetovlrm.webp",
+      "alt": "Figure 1: A text reward model merges with a vision-language model to create a vision-language reward model.",
+      "width": 1200,
+      "height": 986
+    },
     "title": "Transferring Textual Preferences to Vision-Language Understanding through Model Merging",
     "authors": "Chen-An Li, Tzu-Han Lin, Yun-Nung Chen, Hung-yi Lee",
     "venue": "ACL 2025",
@@ -125,7 +184,7 @@
         "url": "https://huggingface.co/datasets/lca0503/rlaif_v_train_400"
       }
     ],
-    "summary": "A training-free approach that merges text-based reward models with large vision-language models to transfer textual preferences and improve the evaluation of multimodal outputs."
+    "summary": "This method merges text reward models with vision-language models to transfer textual preferences and improve multimodal evaluation without additional training."
   },
   {
     "id": "dynamic-superb-phase-2",
@@ -149,6 +208,12 @@
   },
   {
     "id": "dogerm",
+    "figure": {
+      "src": "/assets/img/publications/dogerm.webp",
+      "alt": "Figure 1: DogeRM merges a general reward model with a domain-specific language model.",
+      "width": 1200,
+      "height": 1031
+    },
     "title": "DogeRM: Equipping Reward Models with Domain Knowledge through Model Merging",
     "authors": "Tzu-Han Lin, Chen-An Li, Hung-yi Lee, Yun-Nung Chen",
     "venue": "EMNLP 2024",
@@ -166,7 +231,7 @@
         "url": "https://huggingface.co/collections/miulab/dogerm"
       }
     ],
-    "summary": "A framework that merges domain-specific language models with general reward models, integrating specialized knowledge to improve reward modeling without collecting additional domain-specific preference data."
+    "summary": "DogeRM merges domain-specific language models with general reward models to improve reward modeling without additional domain-specific preference data."
   },
   {
     "id": "multilingual-dense-retrieval",
@@ -183,13 +248,19 @@
         "url": "https://github.com/MiuLab/UMR"
       },
       {
-        "label": "Models & data",
+        "label": "Models and data",
         "url": "https://drive.google.com/drive/folders/1imebGaCvLky9mujcTggn0wmQIVXHwPNs"
       }
     ]
   },
   {
     "id": "visually-enhanced-phrase-understanding",
+    "figure": {
+      "src": "/assets/img/publications/visually-enhanced-phrase-understanding.webp",
+      "alt": "Figure 1: Generated images and CLIP encoders produce visually enhanced phrase embeddings for entity clustering.",
+      "width": 1200,
+      "height": 450
+    },
     "title": "Visually-Enhanced Phrase Understanding",
     "authors": "Tsu-Yuan Hsu*, Chen-An Li*, Chao-Wei Huang, Yun-Nung Chen",
     "venue": "Findings of ACL 2023",
@@ -207,7 +278,7 @@
         "url": "https://drive.google.com/drive/folders/14pvnY02bVgr_X_rCRbxv1oU_eW9AY7jx"
       }
     ],
-    "summary": "A method that enriches phrase representations with generated visual cues, combining text and image encoders to improve language understanding and entity clustering across benchmark datasets."
+    "summary": "This method combines generated visual cues with text and image encoders to improve phrase understanding and entity clustering."
   },
   {
     "id": "converser",
@@ -301,7 +372,7 @@
   {
     "id": "continual-pretraining-forgetting",
     "title": "Examining Forgetting in Continual Pre-training of Aligned Large Language Models",
-    "authors": "Chen-An Li, Hung-Yi Lee",
+    "authors": "Chen-An Li, Hung-yi Lee",
     "venue": "arXiv:2401.03129",
     "year": 2024,
     "type": "preprint",

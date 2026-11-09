@@ -1,19 +1,21 @@
 <!doctype html>
+{% capture page_title %}{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}{% endcapture %}
+{% assign description = page.description | default: site.description | strip %}
 <html lang="{{ site.lang | default: 'en' }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description | strip | escape }}">
+    <title>{{ page_title | escape }}</title>
+    <meta name="description" content="{{ description | escape }}">
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
-    <meta property="og:description" content="{{ site.description | strip | escape }}">
+    <meta property="og:title" content="{{ page_title | escape }}">
+    <meta property="og:description" content="{{ description | escape }}">
     <meta property="og:type" content="website">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}?v={{ site.time | date: '%s' }}" sizes="16x16 32x32 48x48" type="image/x-icon">
     <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}?v={{ site.time | date: '%s' }}" sizes="any" type="image/svg+xml">
-    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     <script>
       try {
         const savedTheme = localStorage.getItem('theme');
@@ -66,11 +68,7 @@
         Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>.
       </p>
       <div class="footer-links">
-        <a href="mailto:{{ site.email }}">Email <span aria-hidden="true">↗</span></a>
-        <a href="{{ site.scholar_url }}" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
-        <a href="{{ site.github_url }}" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
-        <a href="{{ site.x_url }}" target="_blank" rel="noopener">X <span aria-hidden="true">↗</span></a>
-        <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+        {% include contact-links.html %}
         <span>© {{ 'now' | date: '%Y' }}</span>
       </div>
     </footer>

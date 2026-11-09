@@ -26,18 +26,20 @@
 
   function initializePublicationSearch() {
     const controls = document.querySelector('.publication-controls');
-    if (!controls) return;
+    if (!controls) {
+      return;
+    }
 
-    const search = document.querySelector('#publication-search');
-    const buttons = [...controls.querySelectorAll('[data-filter]')];
-    const papers = [...document.querySelectorAll('#all-publications .publication')];
+    const searchInput = document.querySelector('#publication-search');
+    const filterButtons = controls.querySelectorAll('[data-filter]');
+    const papers = document.querySelectorAll('#all-publications .publication');
     const resultCount = document.querySelector('#result-count');
     const emptyState = document.querySelector('#no-results');
     const resetButton = document.querySelector('#reset-search');
     let activeFilter = 'all';
 
     function updateResults() {
-      const query = search.value.trim();
+      const query = searchInput.value.trim();
       const words = query.toLocaleLowerCase().split(/\s+/).filter(Boolean);
       let visibleCount = 0;
 
@@ -47,7 +49,9 @@
         const matches = matchesType && matchesQuery;
 
         paper.hidden = !matches;
-        if (matches) visibleCount += 1;
+        if (matches) {
+          visibleCount += 1;
+        }
       }
 
       const noun = visibleCount === 1 ? 'paper' : 'papers';
@@ -55,24 +59,24 @@
       resultCount.textContent = `${visibleCount} ${noun}${queryLabel}`;
       emptyState.hidden = visibleCount !== 0;
 
-      for (const button of buttons) {
+      for (const button of filterButtons) {
         button.setAttribute('aria-pressed', String(button.dataset.filter === activeFilter));
       }
     }
 
-    for (const button of buttons) {
+    for (const button of filterButtons) {
       button.addEventListener('click', () => {
         activeFilter = button.dataset.filter;
         updateResults();
       });
     }
 
-    search.addEventListener('input', updateResults);
+    searchInput.addEventListener('input', updateResults);
     resetButton.addEventListener('click', () => {
       activeFilter = 'all';
-      search.value = '';
+      searchInput.value = '';
       updateResults();
-      search.focus();
+      searchInput.focus();
     });
 
     controls.hidden = false;
